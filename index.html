@@ -3,48 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alina Lee - Photographer & Film Maker</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <title>danik</title>
+
+    <!-- Preconnect для ускорения загрузки шрифтов -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Подключение шрифтов -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Cherokee:wght@100..900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Подключение файла стилей -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- Header Section -->
     <header>
-        <div class="logo">Alina Lee</div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="social-icons">
-            <a href="#">FB</a>
-            <a href="#">IG</a>
-            <a href="#">YT</a>
+        <div class="header">
+            <div class="logo">Daniel Sazanovich</div>
+            <div class="navig">
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Me</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="social-icons">
+                <a href="#">FB</a>
+                <a href="#">IG</a>
+                <a href="#">YT</a>
+            </div>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <img src="https://via.placeholder.com/600x400" alt="Alina with Camera">
-        <h1>Photographer & Film Maker</h1>
-        <h2>Los Angeles, USA</h2>
-        <a href="#" class="btn">Hire Me</a>
+        <div class="hero-text">
+            <h1>Targetologist<br> & Marketer</h1>
+            <h2>Gdansk, Poland</h2>
+            <a href="#" class="btn">Hire Me</a>
+        </div>
+        <div class="hero-image">
+            <img src="assets/first-photo.png" alt="Daniel">
+        </div>
     </section>
-
+    
     <!-- About Section -->
     <section class="about">
+        <div class="about-img">
+            <img src="assets/second-photo.png" alt="Alina portrait">
+        </div>
         <div class="about-text">
             <h2>About Me</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse scelerisque viverra orci id sodales. Nec eget condimentum lorem...</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> 
+                Suspendisse scelerisque viverra orci id sodales. 
+                <br>Nec eget condimentum lorem...</p>
             <a href="#" class="btn">View My Works</a>
-        </div>
-        <div class="about-img">
-            <img src="https://via.placeholder.com/600x600" alt="Alina portrait">
         </div>
     </section>
 
