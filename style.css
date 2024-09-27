@@ -200,3 +200,152 @@ nav ul li a {
         font-size: 0.9rem;
     }
 }
+
+
+/* Contact Section */
+.contact .container {
+    padding-top: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "form image";
+    align-items: center;
+    height: 70vh;
+    background-color: #fff;
+}
+
+.form-section {
+    flex: 1;
+    margin-left: 100px;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: "Noto Sans Cherokee", sans-serif;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    border: none;
+outline: none;
+}
+
+.input-wrapper {
+    width: 48%;
+}
+
+.input-wrapper input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    
+    border: none;
+outline: none;
+}
+
+textarea {
+    height: 50px;
+    margin-bottom: 15px;
+    resize: none;
+    border: none;
+outline: none;
+}
+
+button {
+    width: 100px;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/* Image Section */
+.image-section {
+    text-align: right;
+}
+
+.image-section img {
+    max-width: 180%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Horizontal lines */
+.horizontal-line {
+    width: 100px;
+    height: 2px;
+    background-color: #000;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.input-line {
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .contact .container {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "image" 
+            "form";
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    button {
+        width: 80px;
+        font-size: 10px;
+    }
+}
+
